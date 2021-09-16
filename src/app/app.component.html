@@ -1,0 +1,53 @@
+<!--Navbar-->
+<nav class="navbar navbar-expand-md navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" routerLink="#"> <i class="fa fa-crosshairs" aria-hidden="true"></i> Navbar</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item px-2">
+            <a class="nav-link" routerLink="">Home</a>
+          </li>
+          <li class="nav-item px-2">
+            <a class="nav-link" routerLink="/explore">Services</a>
+          </li>
+          <li class="nav-item px-2">
+            <a class="nav-link" routerLink="/store">Gallery</a>
+          </li>
+          <li class="nav-item px-2">
+            <a class="nav-link" routerLink="/news">Latest News</a>
+          </li>
+          <li class="nav-item px-2">
+            <a class="nav-link" routerLink="/contactus">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+<router-outlet></router-outlet>
+
+  <!--footer-->
+  <footer class="text-center text-white bg-dark ">
+
+          <div class="row">
+              <div class="col-md-6 col-sm-12">
+        <div class="follow-us">
+
+        </div>
+        <div class="copyright">
+           Follow Us <i class="fab fa-facebook px-2" aria-hidden="true"></i><i class="fab fa-instagram px-2" aria-hidden="true"></i><i class="fab fa-twitch px-2" aria-hidden="true"></i> <i class="fab fa-twitter px-2" aria-hidden="true"></i>
+        </div>
+              </div>
+              
+              <div class="col-md-6 col-sm-12">
+                <div class="copyright">
+            <i class="fa fa-copyright" aria-hidden="true">
+                Created by Basel Mohamed 2021
+            </i>
+                </div>
+            </div>
+          </div>
+      
+  </footer>

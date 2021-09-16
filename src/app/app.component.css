@@ -1,0 +1,46 @@
+
+.navbar-brand{
+font-size: 1.5rem;
+font-weight: bolder;
+color: white;
+}
+.nav-link {
+    color: #D1E0EC !important;
+}
+.nav-link:hover{
+    border-bottom: 6px solid !important;
+    transition:   border-bottom 2s  ease-out;
+}
+
+footer{
+    font-size: 1rem;
+    
+}
+footer i:hover{
+   color: lightskyblue;
+}
+footer .copyright{
+    margin: 20px;
+}
+
+
+
+@media (max-width: 767.98px) { 
+.nav-link{
+    margin-top: 10px;
+    text-align: center;
+    margin: auto;
+
+}
+.nav-link:hover{
+    border: none !important;
+    background-color: white !important;
+    color :black !important;
+    border-radius:  20px ;
+}
+footer .copyright{
+    margin: 20px;
+}
+
+ }
+

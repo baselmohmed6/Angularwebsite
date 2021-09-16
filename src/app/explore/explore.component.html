@@ -1,0 +1,37 @@
+<section class="services my-5 p-5 text-center">
+  <div class="container">
+    <h2>
+      Our payment methods
+    </h2>
+    <hr class="mx-auto">
+    <div class="row">
+      <div class="col-lg-3" *ngFor="let data of servicesData">
+        <div class="icon">
+          <i [class]="data.icon"></i>
+        </div>
+        <h4>{{data.heading}}</h4>
+      </div>
+    </div>
+  </div>
+</section>
+<hr>
+
+<section class="expolre">
+  <div class="container  ">
+    <h2 class="text-center pb-5">Explore Templates</h2>
+    <div class="row">
+      <div class="col-lg-6 col-sm-12 d-flex justify-content-center" *ngFor="let data of exploreData">
+        <div class="card" style="width: 18rem;">
+          <img [src]="data.img" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title text-center">{{data.title}}</h5>
+            <p class="card-text text-center">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus
+              quisquam iure odit perspiciatis esse odio nihil excepturi deleniti voluptas id assumenda.</p>
+            <a href="#" class="btn btn-success d-flex justify-content-center">Download Now <i
+                class="fa fa-download px-2" aria-hidden="true"></i> </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,21 @@
+.row i:hover{
+color: goldenrod;
+}
+.services hr{
+    border: 3px solid  black;
+    border-radius: 10px;
+    width:30%;
+    
+}
+
+.btn{
+    background-color: black !important;
+    color: goldenrod;
+}
+.btn:hover{
+    background-color: black !important;
+    color: white;
+}
+.card{
+    margin-bottom: 4rem;
+}

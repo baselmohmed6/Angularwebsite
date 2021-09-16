@@ -1,0 +1,50 @@
+<header class="class container bg-dark text-white my-5 p-2 text-center ">
+ <h1>Contact Us</h1>
+ <hr>   
+</header>
+<section class="contact container mb-5">
+<form action="" [formGroup]="contactForm ">
+    <div class="form-group">
+        <label for="username">Username:</label>
+        <input type="text" name="username" id="username" class="form-control mb-2" required formControlName="username">
+    </div>
+    <div *ngIf="username && username.invalid && (username.touched||username.dirty)" 
+    class="alert alert-warning"> 
+    <div *ngIf="username.errors?.required"><p>
+        Username is required</p>
+    </div>
+    </div>
+    <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="text" name="email" id="email" class="form-control mb-2" required formControlName="email">
+    </div>
+    <div *ngIf="email && email.invalid && (email.touched||email.dirty)" 
+    class="alert alert-warning"> 
+    <div *ngIf="email.errors?.required">
+       <p> Email is required</p>
+    </div>
+    </div>
+    <div class="form-group">
+        <label for="number">Number:</label>
+        <input type="tel" name="number" id="number" class="form-control mb-2" required formControlName="number">
+    </div>
+    <div *ngIf="number && number.invalid && (number.touched||number.dirty)" 
+    class="alert alert-warning"> 
+    <div *ngIf="number.errors?.required">
+      <p> Number is required</p> 
+    </div>
+    </div>
+    <div class="form-group">
+        <label for="message">Message:</label>
+        <textarea name="" id="" cols="30" rows="10" class="form-control mb-2" required formControlName="message"></textarea>
+        <div *ngIf="message && message.invalid && (message.touched||message.dirty)" 
+    class="alert alert-warning"> 
+    <div *ngIf="message.errors?.required">
+     <p>  Message is required</p> 
+    </div>
+    </div>
+    </div  >
+    <div class="text-center ">
+    <button type="submit" class="btn btn-dark mb-5 mt-5  ">Submit</button></div>
+</form>
+</section>
